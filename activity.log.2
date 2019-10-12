@@ -1,0 +1,27 @@
+Exception on /user/charge [POST]
+Traceback (most recent call last):
+  File "/Users/sandeep/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/sandeep/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/sandeep/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/sandeep/anaconda3/lib/python3.7/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/Users/sandeep/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/sandeep/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/sandeep/anaconda3/lib/python3.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/sandeep/Sandeep/ML & DL/SmartDiet/app/views/user.py", line 176, in charge
+    customer = stripe.Customer.create(email=current_user.email, source=request.form['stripeToken'])
+  File "/Users/sandeep/anaconda3/lib/python3.7/site-packages/stripe/api_resources/abstract/createable_api_resource.py", line 22, in create
+    response, api_key = requestor.request("post", url, params, headers)
+  File "/Users/sandeep/anaconda3/lib/python3.7/site-packages/stripe/api_requestor.py", line 121, in request
+    resp = self.interpret_response(rbody, rcode, rheaders)
+  File "/Users/sandeep/anaconda3/lib/python3.7/site-packages/stripe/api_requestor.py", line 372, in interpret_response
+    self.handle_error_response(rbody, rcode, resp.data, rheaders)
+  File "/Users/sandeep/anaconda3/lib/python3.7/site-packages/stripe/api_requestor.py", line 151, in handle_error_response
+    raise err
+stripe.error.InvalidRequestError: Request req_jrhoj6jy56eO8h: You cannot use a Stripe token more than once: tok_1FSjqAL377PMGwZ9OGqE2bJF.

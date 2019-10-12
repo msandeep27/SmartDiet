@@ -1,96 +1,42 @@
-# AI_Startup_Prototype
-This is the code for "Watch Me Build an AI Startup" By Siraj Raval on Youtube
+
 
 # Overview 
 
-This is the code for [this](https://youtu.be/NzmoPqte4V4) video on Youtube by Siraj Raval on how to build an AI Startup. It contains the transfer learning notebook and the notes from the video as a notebook as well. 
+The biggest problem to any health problems today is the food we eat and water we drink, because of irregular  diets we find it really difficult to understand what we eat how much is it going to affect us.
 
+Once we put on weight and land up into any health problems we then approach a dietician who takes charges up a hefty price to provide us a diet plan. which again falls on us as how much we follow it.
 
+This brings us to a need to someone tell us what we are eating how much would that cause to our health.
 
-![License](http://img.shields.io/:license-mit-blue.svg)
+So here we tried to create  an app that is personalised to your needs and your data and tell whats good for your health.
 
-A fork of [Max Halford's](https://github.com/MaxHalford) [flask-boilerplate](https://github.com/MaxHalford/flask-boilerplate) and https://github.com/alectrocute/flaskSaaS/edit/master/README.md
+Welcome to SmartDietcian!!!
 
-## Features
-
-- [x] User account sign up, sign in, password reset, all through asynchronous email confirmation.
-- [x] Form generation.
-- [x] Error handling.
-- [x] HTML macros and layout file.
-- [x] "Functional" file structure.
-- [x] Python 3.x compliant.
-- [x] Asynchronous AJAX calls.
-- [x] Administration panel.
-- [x] Logging.
-- [ ] Stripe subscriptions. (WIP)
-- [ ] RESTful API for payments.
-- [ ] Simple RESTful API to communicate with your app.
-
-## Libraries
-
-### Backend
-
-- [Flask](http://flask.pocoo.org/), obviously.
-- [Flask-Login](https://flask-login.readthedocs.org/en/latest/) for the user accounts.
-- [Flask-SQLAlchemy](https://pythonhosted.org/Flask-SQLAlchemy/) interacting with the database.
-- [Flask-WTF](https://flask-wtf.readthedocs.org/en/latest/) and [WTForms](https://wtforms.readthedocs.org/en/latest/) for the form handling.
-- [Flask-Mail](https://pythonhosted.org/Flask-Mail/) for sending mails.
-- [itsdangerous](http://pythonhosted.org/itsdangerous/) for generating random tokens for the confirmation emails.
-- [Flask-Bcrypt](https://flask-bcrypt.readthedocs.org/en/latest/) for generating secret user passwords.
-- [Flask-Admin](https://flask-admin.readthedocs.org/en/latest/) for building an administration interface.
-- [Flask-Script](https://flask-script.readthedocs.io/en/latest/) for managing the app.
-- [structlog](http://structlog.readthedocs.io/en/stable/) for logging.
-- [Flask-DebugToolBar](https://flask-debugtoolbar.readthedocs.io/en/latest/) for adding a performance toolbar in development.
-- [gunicorn](http://gunicorn.org/) for acting as a reverse-proxy for Nginx.
-- [Flask-Stripe](http://stripe.com/) for subscription billing.
-
-### Frontend
-
-- [Semantic UI](http://semantic-ui.com/) for the global style. Very similar to [Bootstrap](http://getbootstrap.com/).
-- [Leaflet JS](http://leafletjs.com/) for the map. I only added it for the sake of the example.
-
-## Structure
-
-I did what most people recommend for the application's structure. Basically, everything is contained in the `app/` folder.
-
-- There you have the classic `static/` and `templates/` folders. The `templates/` folder contains macros, error views and a common layout.
-- I added a `views/` folder to separate the user and the website logic, which could be extended to the the admin views.
-- The same goes for the `forms/` folder, as the project grows it will be useful to split the WTForms code into separate files.
-- The `models.py` script contains the SQLAlchemy code, for the while it only contains the logic for a `users` table.
-- The `toolbox/` folder is a personal choice, in it I keep all the other code the application will need.
-- Management commands should be included in `manage.py`. Enter `python manage.py -?` to get a list of existing commands.
-- I added a Makefile for setup tasks, it can be quite useful once a project grows.
-
-
-## Setup
-
-### Vanilla
-
-- Install the requirements and setup the development environment.
-
-	`make install && make dev`
-
-- Create the database.
-
-	`python manage.py initdb`
-
-- Run the application.
-
-	`python manage.py runserver`
-
-- Navigate to `localhost:5000`.
-
-## Configuration
-
-The goal is to keep most of the application's configuration in a single file called `config.py`. I added a `config_dev.py` and a `config_prod.py` who inherit from `config_common.py`. The trick is to symlink either of these to `config.py`. This is done in by running `make dev` or `make prod`.
-
-I have included a working Gmail account to confirm user email addresses and reset user passwords, although in production you should't include the file if you push to GitHub because people can see it. The same goes for API keys, you should keep them secret. You can read more about secret configuration files [here](https://exploreflask.com/configuration.html).
-
-Read [this](http://flask.pocoo.org/docs/0.10/config/) for information on the possible configuration options.
-
-## License
-
-The MIT License (MIT). Please see the [license file](LICENSE) for more information.
-
-Smart Diet
 ![Alt text](/images/SmartDiet.png?raw=true)
+
+
+Smart Dietician is an app that is built to address this particular problem where users can register into it and every-time you wish to eat something just take an image and upload in the app.
+
+The app would tell you how much calories you are going to consume and would that be good for your health considering you’r height, weight and current activity.
+
+This being the MVP version we have just tried to prototype the concept where you just upload a pic and provide how much calories one is going to take in.
+
+Health Monitoring!!!
+
+![Alt text](/images/Health-Monitor.png?raw=true)
+
+Future work
+- Integrate with Fit-bit users data to provide Live recommendations 
+- Track activities and provide what you should consume now for a better health
+- Forecast any health problems 
+- What food you should avoid and what food to choose.
+
+Dataset used:
+
+http://www.site.uottawa.ca/~shervin/food/
+
+
+Note:- The model that is trained is not uploaded in Github as its big model
+
+Contributers
+gulfarooqi https://github.com/gulfarooqi

@@ -9,46 +9,152 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="icon" type="image/png" href="static/images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="static/vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="static/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="static/vendor/animate/animate.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="static/vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="static/vendor/perfect-scrollbar/perfect-scrollbar.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="static/css/util.css">
+  <link rel="stylesheet" type="text/css" href="static/css/main.css">
+<!--===============================================================================================-->
 	<body>
-	<img src="http://diagnijmegen.nl/images/b/bd/Xray.jpg" alt="Italian Trulli">
 
-					<!-- {{ predictions }} -->
-					<style>
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
+<!--===============================================================================================-->  
+  <script src="static/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+  <script src="static/vendor/bootstrap/js/popper.js"></script>
+  <script src="static/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+  <script src="static/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+  <script src="static/js/main.js"></script>
 
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
-
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
-</style>
+	<img id="static/images/apple.jpeg">
 </head>
 <body>
 
-<h2>Results</h2>
+<div class="table100 ver3 m-b-110">
+          <table data-vertable="ver3">
+            <thead>
+              <tr class="row100 head">
+                <th class="column100 column2" data-column="column2">Age</th>
+                <th class="column100 column3" data-column="column3">Sex</th>
+                <th class="column100 column4" data-column="column4">Height</th>
+                <th class="column100 column5" data-column="column5">Weight</th>
+                <th class="column100 column6" data-column="column6">BMI</th>
+                <th class="column100 column7" data-column="column7">Steps per weeks</th>
+                <th class="column100 column8" data-column="column8">Heart-rate</th>
+                <th class="column100 column9" data-column="column8">Goal</th>
+                <th class="column100 column10" data-column="column8">Current Health Status</th>
 
-<table>
-  <tr>
-    <th>Disease</th>
-    <th>Percent Likelihood</th>
-  </tr>
-  <tr>
-    <td>Pneumonia</td>
-    <td>98%</td>
-  </tr>
-  <tr>
-    <td>Fibrosis</td>
-    <td>43%</td>
-  </tr>
-</table>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="row100">
+                <td class="column100 column2" data-column="column2">29</td>
+                <td class="column100 column3" data-column="column3">Male</td>
+                <td class="column100 column4" data-column="column4">175cm</td>
+                <td class="column100 column5" data-column="column5">85 kgs</td>
+                <td class="column100 column6" data-column="column6">22.2</td>
+                <td class="column100 column7" data-column="column7">8022</td>
+                <td class="column100 column8" data-column="column8">120</td>
+                <td class="column100 column8" data-column="column9">10 kgs</td>
+                <td class="column100 column8" data-column="column10" bgcolor="#db0201"> Un-healthy </td>
+
+              </tr>
+            </tbody>
+          </table>
+        </div>
+<div class="table100 ver6 m-b-110">
+          <table data-vertable="ver6">
+            <thead>
+              <tr class="row100 head">
+                <th class="column100 column1" data-column="column1"></th>
+                <th class="column100 column2" data-column="column2">Sunday</th>
+                <th class="column100 column3" data-column="column3">Monday</th>
+                <th class="column100 column4" data-column="column4">Tuesday</th>
+                <th class="column100 column5" data-column="column5">Wednesday</th>
+                <th class="column100 column6" data-column="column6">Thursday</th>
+                <th class="column100 column7" data-column="column7">Friday</th>
+                <th class="column100 column8" data-column="column8">Saturday</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="row100">
+                <td class="column100 column1" data-column="column1">2- Slice Bread Butter</td>
+                <td class="column100 column2" data-column="column2">120 calories</td>
+                <td class="column100 column3" data-column="column3">--</td>
+                <td class="column100 column4" data-column="column4">--</td>
+                <td class="column100 column5" data-column="column5">120 calories</td>
+                <td class="column100 column6" data-column="column6">--</td>
+                <td class="column100 column7" data-column="column7">120 calories</td>
+                <td class="column100 column8" data-column="column8">120 calories</td>
+              </tr>
+
+              <tr class="row100">
+                <td class="column100 column1" data-column="column1">Coffee</td>
+                <td class="column100 column2" data-column="column2">350 calories</td>
+                <td class="column100 column3" data-column="column3"></td>
+                <td class="column100 column4" data-column="column4">350 calories</td>
+                <td class="column100 column5" data-column="column5">--</td>
+                <td class="column100 column6" data-column="column6">350 calories</td>
+                <td class="column100 column7" data-column="column7">--</td>
+                <td class="column100 column8" data-column="column8">350 calories</td>
+              </tr>
+
+              <tr class="row100">
+                <td class="column100 column1" data-column="column1">Pizza</td>
+                <td class="column100 column2" data-column="column2">266 calories</td>
+                <td class="column100 column3" data-column="column3">--</td>
+                <td class="column100 column4" data-column="column4">--</td>
+                <td class="column100 column5" data-column="column5">--</td>
+                <td class="column100 column6" data-column="column6">266 calories</td>
+                <td class="column100 column7" data-column="column7">266 calories</td>
+                <td class="column100 column8" data-column="column8">266 calories</td>
+              </tr>
+
+              <tr class="row100">
+                <td class="column100 column1" data-column="column1">Coffee</td>
+                <td class="column100 column2" data-column="column2">350 calories</td>
+                <td class="column100 column3" data-column="column3"></td>
+                <td class="column100 column4" data-column="column4">350 calories</td>
+                <td class="column100 column5" data-column="column5">--</td>
+                <td class="column100 column6" data-column="column6">350 calories</td>
+                <td class="column100 column7" data-column="column7">--</td>
+                <td class="column100 column8" data-column="column8">350 calories</td>
+              </tr>
+
+              <tr class="row100">
+                <td class="column100 column1" data-column="column1">Pasta</td>
+                <td class="column100 column2" data-column="column2">120 calories</td>
+                <td class="column100 column3" data-column="column3">--</td>
+                <td class="column100 column4" data-column="column4">120 calories</td>
+                <td class="column100 column5" data-column="column5">--</td>
+                <td class="column100 column6" data-column="column6">120 calories</td>
+                <td class="column100 column7" data-column="column7">--</td>
+                <td class="column100 column8" data-column="column8">120 calories</td>
+              </tr>
+              <tr class="row100">
+                <td class="column100 column1" data-column="column1">Apple</td>
+                <td class="column100 column2" data-column="column2">52 calories</td>
+                <td class="column100 column3" data-column="column3">--</td>
+                <td class="column100 column4" data-column="column4">--</td>
+                <td class="column100 column5" data-column="column5">52 calories</td>
+                <td class="column100 column6" data-column="column6">--</td>
+                <td class="column100 column7" data-column="column7">52 calories</td>
+                <td class="column100 column8" data-column="column8">52 calories</td>
+              </tr>
+             
+            </tbody>
+          </table>
+        </div>
 
 </body>
 </html>
