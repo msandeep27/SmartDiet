@@ -39,4 +39,4 @@ http://www.site.uottawa.ca/~shervin/food/
 Note:- The model that is trained is not uploaded in Github as its big model
 
 Contributers
-gulfarooqi https://github.com/gulfarooqi
+sbelal https://github.com/sbelal/
