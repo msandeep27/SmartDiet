@@ -23,6 +23,8 @@ This being the MVP version we have just tried to prototype the concept where you
 
 Health Monitoring!!!
 
+![Alt text](/images/Health-Monitor.png?raw=true)
+
 
 ## Running the app
 Install the requirements and setup the development environment.
@@ -47,9 +49,6 @@ I have included a working Gmail account to confirm user email addresses and rese
 
 Read this for information on the possible configuration options.
 
-
-
-![Alt text](/images/Health-Monitor.png?raw=true)
 
 Future work
 - Integrate with Fit-bit users data to provide Live recommendations 
