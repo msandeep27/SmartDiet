@@ -23,6 +23,32 @@ This being the MVP version we have just tried to prototype the concept where you
 
 Health Monitoring!!!
 
+
+## Running the app
+Install the requirements and setup the development environment.
+
+	make install && make dev
+
+Create the database.
+
+python manage.py initdb
+
+	Run the application.
+
+	python manage.py runserver
+
+Navigate to localhost:5000.
+
+Configuration
+
+The goal is to keep most of the application's configuration in a single file called config.py. I added a config_dev.py and a config_prod.py who inherit from config_common.py. The trick is to symlink either of these to config.py. This is done in by running make dev or make prod.
+
+I have included a working Gmail account to confirm user email addresses and reset user passwords, although in production you should't include the file if you push to GitHub because people can see it. The same goes for API keys, you should keep them secret. You can read more about secret configuration files here.
+
+Read this for information on the possible configuration options.
+
+
+
 ![Alt text](/images/Health-Monitor.png?raw=true)
 
 Future work
